@@ -1,0 +1,32 @@
+{
+    "name": "marinar/activiable",
+    "description": "Activiable",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marin Ivanov",
+            "email": "marin@dev.nddesign.no"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Marinar\\Activiable\\": "src/"
+        }
+    },
+
+    "require": {
+    },
+    "extra": {
+        "marinar": {
+            "module": false,
+            "plugin": true,
+            "addon_to": false
+        },
+        "laravel": {
+            "aliases": {
+                "MarinarActiviable": "Marinar\\Activiable\\MarinarActiviable"
+            }
+        }
+    }
+}
