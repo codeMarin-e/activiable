@@ -31,6 +31,7 @@ return [
      * If path is file - only it
      */
     'exclude_stubs' => [
+        // @HOOK_CONFIG_EXCLUDE_STUBS
     ],
 
     /**
@@ -38,18 +39,9 @@ return [
      * file_path => [ '@hook1', '@hook2' ]
      * file_path => * - all from this file
      */
-    'exclude_injects' => [],
-
-    /**
-     * Disk driver to be used - check filesystem.php
-     * null - use the default
-     */
-    'disk' => null,
-
-    /**
-     * Keep original file name when uploading. Not very safe if true
-     */
-    'keep_original_name' => false,
+    'exclude_injects' => [
+        // @HOOK_CONFIG_EXCLUDE_INJECTS
+    ],
 
     /**
      * Addons hooked to the package
